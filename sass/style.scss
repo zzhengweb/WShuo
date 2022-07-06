@@ -1,0 +1,828 @@
+@font-face {
+  font-family: "SourceHanSansCN Bold";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "DIN-Bold";
+  /* Project id 2621899 */
+  src: url('../fonts/DIN-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN Medium";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN Regular";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN Normal";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Normal.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN Light";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Light.otf') format('truetype');
+}
+
+input,
+button,
+textarea {
+  background: none;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #019ED5;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+
+body {
+  min-height: 1000px;
+  background-color: #fff;
+  font-family: "SourceHanSansCN Regular", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
+}
+
+* {
+  letter-spacing: -.02em;
+}
+
+/* 页面1500px盒子 */
+
+.container_zz {
+  width: 100%;
+  max-width: 1530px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.visible_xs {
+  display: none !important;
+}
+
+/* 顶部导航 */
+
+.header_bg {
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+
+  &.navFixed {
+    position: fixed;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    top: 0;
+    z-index: 999999;
+  }
+
+  .container_zz {
+    max-width: 1500px;
+  }
+}
+
+.header_nav {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  height: 116px;
+
+  .header_logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 116px;
+    }
+  }
+
+  .header_list {
+    flex: 1;
+    width: 100px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    >li {
+      display: inline-block;
+      position: relative;
+      height: 116px;
+      line-height: 116px;
+      margin: 0 25px;
+
+      >a {
+        font-size: 19px;
+        color: #353535;
+        font-family: "SourceHanSansCN Light";
+
+        &:hover {
+          color: #196fba;
+          font-weight: bold;
+        }
+      }
+
+      &:first-child {
+        width: 50px;
+      }
+    }
+  }
+
+  .header_right {
+    width: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 116px;
+
+    a {
+      display: inline-block;
+      height: 34px;
+      line-height: 34px;
+      border-radius: 50%;
+      background-color: #019ed5;
+      width: 34px;
+      text-align: center;
+      color: #fff;
+      font-size: 15px;
+    }
+  }
+}
+
+.banner {
+  .container_zz {
+    width: 100%;
+    max-width: none;
+    padding: 0 10.9375vw;
+  }
+
+  .swiper-container {
+    position: relative;
+
+    .swiper-slide {
+      height: 40.7292vw;
+
+      img {
+        height: 100%;
+        display: inline-block;
+      }
+    }
+
+    .banner-prev,
+    .banner-next {
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      margin-top: -.8854vw;
+
+      img {
+        height: 1.82vw;
+      }
+    }
+
+    .banner-prev {
+      left: 3.59vw;
+    }
+
+    .banner-next {
+      right: 3.59vw;
+    }
+
+    .swiper-pagination {
+      height: 10px;
+      bottom: 11.6146vw;
+
+      .my-bullet {
+        margin: 0 .339vw;
+        width: .52vw;
+        height: .52vw;
+        background-color: #bfbfbf;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      .my-bullet-active {
+        background-color: #000000;
+      }
+    }
+
+    .banner_info {
+      position: absolute;
+      height: 100%;
+      padding-top: 10.9375vw;
+
+      .title1 {
+        font-size: 1.458vw;
+        margin-bottom: .364vw;
+      }
+
+      .title2 {
+        font-size: 2.18vw;
+        font-family: "SourceHanSansCN Bold";
+        line-height: 2.81vw;
+        margin-bottom: .52vw;
+      }
+
+      .title3 {
+        font-size: .99vw;
+        font-family: "SourceHanSansCN Bold Normal";
+        margin-bottom: 2.29vw;
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: .78vw;
+        }
+      }
+
+      .more {
+        width: 9.58vw;
+        height: 2.5vw;
+        background-color: #019ed5;
+        border-radius: .83vw;
+        text-align: center;
+
+        a {
+          color: white;
+          line-height: 2.5vw;
+        }
+      }
+    }
+  }
+}
+
+// 搜索框
+.i_search {
+  max-width: 1214px;
+  width: 100%;
+  margin: 0 auto;
+  height: 58px;
+  border-radius: 29px;
+  box-shadow: 0 3px 21px rgba(0, 0, 0, .1);
+  margin-top: -29px;
+  position: relative;
+  z-index: 9;
+  background-color: white;
+  margin-bottom: 70px;
+
+  form {
+    height: 100%;
+  }
+
+  .search_box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .search_input {
+      flex: 1;
+      width: 100px;
+      height: 58px;
+      font-family: "SourceHanSansCN Light";
+      border: none;
+      font-size: 15px;
+
+      &::placeholder {
+        color: #9f9f9f;
+      }
+    }
+
+    .search_submit {
+      border: none;
+
+      img {
+        height: 22px;
+      }
+    }
+  }
+}
+
+.i_title {
+  display: flex;
+  justify-content: space-between;
+
+  .title_name {
+    font-size: 33px;
+    font-family: "SourceHanSansCN Bold";
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 83px;
+      height: 2px;
+      background-color: #dcdcdc;
+      position: absolute;
+      right: -98px;
+      top: 24px;
+    }
+  }
+
+  .btn_list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      background-color: #019ed5;
+      height: 38px;
+      width: 148px;
+      border-radius: 19px;
+      line-height: 38px;
+      text-align: center;
+      box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .2);
+      transition: all .1s;
+      margin-left: 38px;
+
+      a {
+        font-family: "SourceHanSansCN Light";
+        font-size: 15px;
+        color: #fff;
+      }
+
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 3px 3px 1px rgba(0, 0, 0, .2);
+      }
+    }
+  }
+}
+
+.ipro_wrapper {
+  margin-bottom: 100px;
+
+  .i_title {
+    margin-bottom: 48px;
+  }
+
+  .menu_list {
+    list-style: none;
+    display: flex;
+    margin-bottom: 58px;
+
+    li {
+      width: 216px;
+      height: 42px;
+      line-height: 40px;
+      border: 1px solid;
+      text-align: center;
+      margin-right: 20px;
+      border-color: rgb(1, 158, 213, 0);
+      border-radius: 0;
+      transition: border-color .3s, border-radius .3s .1s;
+
+      a {
+        font-size: 16px;
+        color: #636363;
+        font-family: "SourceHanSansCN Light";
+      }
+
+      &:hover {
+        border-color: rgb(1, 158, 213, 1);
+        border-radius: 21px;
+
+        // transition: border-color .3s .1s,border-radius .3s;
+        a {
+          color: #019ed5;
+        }
+      }
+    }
+  }
+
+  .pro_list1,
+  .pro_list2 {
+    display: flex;
+
+    li {
+      background-color: #f4f3f8;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 49px;
+      position: relative;
+
+      .pro_name {
+        position: absolute;
+        z-index: 2;
+        font-size: 26px;
+        left: 72px;
+        top: 80px;
+      }
+
+      .more_btn {
+        position: absolute;
+        z-index: 2;
+        font-size: 26px;
+        left: 72px;
+        bottom: 100px;
+        transition: all .5s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .img_main {
+        transition: all .5s;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      &:hover {
+        .img_main {
+          transform: scale(1.08);
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .pro_list1 {
+    li {
+      width: calc(50% - 16px);
+      margin-right: 32px;
+    }
+  }
+
+  .pro_list2 {
+    li {
+      width: calc(33.33% - 24px);
+      margin-right: 36px;
+
+    }
+  }
+}
+
+//应用领域
+.iarea_wrapper {
+  margin-bottom: 150px;
+
+  .i_title {
+    margin-bottom: 50px;
+  }
+
+  .area_list {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      width: 936px;
+
+      &:last-child {
+        width: 498px;
+      }
+
+      .main_img {
+        height: 640px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 16px;
+        margin-bottom: 27px;
+      }
+
+      .item_title {
+        font-size: 27px;
+        font-family: "SourceHanSansCN Normal";
+        margin-bottom: 20px;
+
+        a {
+          color: #000000;
+        }
+      }
+
+      .item_more {
+        font-size: 17px;
+        font-family: "SourceHanSansCN Normal";
+      }
+    }
+  }
+}
+
+// 新闻中心
+.inews_wrapper {
+  margin-bottom: 90px;
+  .i_title {
+    margin-bottom: 22px;
+  }
+
+  .inews_arrow{
+    display: flex;
+    margin-bottom: 55px;
+    cursor: pointer;
+    .iconfont{
+      margin-right: 10px;
+      width: 44px;
+      height: 44px;
+      text-align: center;
+      line-height: 42px;
+      border-radius: 50%;
+      font-size: 26px;
+      color: #bfbfbf;
+      border-color: #bfbfbf;
+      border-width: 1px;
+      border-style: solid;
+      transition: all .5s;
+      &:hover{
+        color: #019ed5;
+        border-color: #019ed5;
+      }
+      &.pre{
+        transform: rotate(-90deg);
+      }
+      &.next{
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .i_newslist {
+    .i_list {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: calc(33.33% - 22px);
+        margin-right: 33px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .item_img {
+          height: 336px;
+          width: 100%;
+          overflow: hidden;
+          border-radius: 16px;
+          margin-bottom: 20px;
+          img{
+            transition: all .5s;
+          }
+          &:hover{
+            img{
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .item_date{
+          font-size: 18px;
+          color: #717171;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          img{
+            margin-right: 10px;
+          }
+        }
+
+        .item_title {
+          font-size: 28px;
+          color: #000000;
+          margin-bottom: 30px;
+        }
+
+        .item_more {
+          font-size: 17px;
+          color: #717171;
+        }
+
+      }
+    }
+  }
+}
+
+// 合作伙伴
+.icompanys_wrapper{
+  background-color: #fafafa;
+  padding-top: 50px;
+  .i_title{
+    margin-bottom: 55px;
+  }
+  .companys_list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .companys_item{
+      width: calc( 20% - 12px);
+      height: 120px;
+      margin-right: 15px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      transition: all .5s;
+      border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
+      img{
+        transition: all .5s;
+        height: 70%;
+      }
+      &:nth-child(5n){
+        margin-right: 0;
+      }
+      &:hover{
+        box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .swiper-container{
+    padding-bottom: 100px;
+    .swiper-pagination {
+      bottom: 50px;
+  
+      .my-bullet {
+        margin: 0 .339vw;
+        width: 11px;
+        height: 11px;
+        background-color: #d1d1d1;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 50%;
+        margin:0 7px;
+      }
+  
+      .my-bullet-active {
+        background-color: #019ed5;
+        width: 13px;
+        height: 13px;
+        margin:0 6px;
+      }
+    }
+  }
+}
+
+//关于我们
+.icontact_wrapper{
+  background-color: #019ed5;
+  height: 176px;
+  .container_zz{
+    height: 100%;
+  }
+  .icontact_box{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+      font-size: 28px;
+      color: #fff;
+      font-family: "SourceHanSansCN Light";
+    }
+    .icontact_btn{
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      width: 210px;
+      display: inline-block;
+      background-color: white;
+      color: #019ed5;
+      font-family: "SourceHanSansCN Bold";
+      font-size: 18px;
+      border-radius: 18px;
+      img{
+        margin-left: 24px;
+      }
+      a{
+        color: #019ed5;
+      }
+    }
+  }
+}
+
+// 底部
+.footer{
+  background-color: #e7e8ea;
+  padding-top: 75px;
+  padding-bottom: 65px;
+  .logo{
+    margin-bottom: 35px;
+    img{
+      width: 230px;
+    }
+  }
+  .footer_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .footer_title{
+      font-size: 18px;
+      color: #262626;
+      font-family: "SourceHanSansCN Medium";
+      margin-bottom: 25px;
+    }
+    .content_left{
+      width: 40%;
+      .left_info{
+        p{
+          color: #666667;
+          font-size: 15px;
+          font-family: "SourceHanSansCN Light";
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .content_mid{
+      width: 100px;
+      flex: 1;
+      .mid_nav{
+        display: flex;
+        margin-bottom: 24px;
+        li{
+          margin-right: 40px;
+          a{
+            color: #484848;
+            font-size: 16px;
+            font-family: "SourceHanSansCN Light";
+            &:hover{
+              color: #019ED5;
+            }
+          }
+        }
+      }
+      .mid_icon{
+        display: flex;
+        li{
+          margin-right: 16px;
+          width: 35px;
+          height: 35px;
+          line-height: 31px;
+          border-radius: 50%;
+          border: 2px solid #cdcdcd;
+          text-align: center;
+          .iconfont{
+            color: #cdcdcd;
+            font-size: 22px;
+          }
+          &:hover{
+            border: 2px solid #019ED5;
+            .iconfont{
+              color: #019ED5;
+            }
+          }
+        }
+      }
+    }
+    .content_right{
+      padding-top: 15px;
+    }
+  }
+}
+.footer_info{
+  background-color: #e7e8ea;
+  height: 58px;
+  line-height: 58px;
+  border-top: 1px solid #c5c6c7;
+  .info_box{
+    color: #767676;
+    font-size: 14px;
+    font-family: "SourceHanSansCN Light";
+    display: flex;
+    justify-content: space-between;
+  }
+}

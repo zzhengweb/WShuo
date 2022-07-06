@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "SourceHanSansCN Bold";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "DIN-Bold";
+  /* Project id 2621899 */
+  src: url('../fonts/DIN-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN Medium";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN Regular";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN Normal";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Normal.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "SourceHanSansCN Light";
+  /* Project id 2621899 */
+  src: url('../fonts/SourceHanSansCN-Light.otf') format('truetype');
+}
+
+input,
+button,
+textarea {
+  background: none;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  border: none;
+}
+
+p {
+  font-family: "SourceHanSansCN Regular";
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+  text-decoration: none;
+  font-family: "SourceHanSansCN Regular";
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: red;
+  text-decoration: none;
+}
+
+
+body {
+  background-color: #fff;
+  font-family: "SourceHanSansCN Normal", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
+}
+
+* {
+  letter-spacing: -.02em;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+.header_bg {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 12;
+  box-shadow: 0 .2rem .2rem rgba($color: #000000, $alpha: .2);
+
+  .container_zz {
+    padding: 0;
+  }
+}
+
+.header_nav {
+  padding: 0;
+
+  .header_logo {
+    width: 100%;
+    text-align: center;
+    height: 2.2rem;
+    padding: .225rem 0;
+    background-color: white;
+
+    img {
+      height: 1.75rem;
+      display: inline-block;
+      width: auto;
+    }
+  }
+
+  .header_list {
+    position: fixed;
+    left: 0;
+    top: 2.2rem;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0;
+    transition-property: all;
+    transition-duration: .5s, .5s;
+    right: 100%;
+    width: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: calc(100% - 2.2rem);
+    background-color: #fff;
+
+    .header_right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border-bottom: none;
+      margin-top: .375rem;
+      a{
+        display: inline-block;
+        height: .85rem;
+        line-height: .85rem;
+        border-radius: 50%;
+        background-color: #019ed5;
+        width: .85rem;
+        text-align: center;
+        color: #fff;
+        font-size: .375rem;
+      }
+    }
+
+    >li {
+      position: relative;
+      display: block;
+      padding: 0;
+      text-align: left;
+      border-bottom: 0.05rem solid #d5d7d9;
+      padding-left: .6rem;
+      width: 100vw;
+
+      a {
+        line-height: 2rem;
+
+        >img {
+          width: .8rem;
+          margin-right: .25rem;
+        }
+
+        .up_icon {
+          margin-left: .5rem;
+          position: relative;
+          top: 0;
+
+          &.visible_xs {
+            display: inline-block !important;
+          }
+
+          &.popupShow {
+            img {
+              transform: rotate(-180deg);
+            }
+          }
+
+          img {
+            transition: all .5s;
+            width: .425rem
+          }
+        }
+      }
+    }
+
+    li a {
+      color: #3f3f3f;
+      font-size: .6rem;
+    }
+  }
+
+  .header_right {
+    display: none;
+  }
+
+  .change_btn {
+    position: fixed;
+    left: .5rem;
+    top: .75rem;
+
+    img {
+      width: .95rem;
+    }
+  }
+}
+
+.open_nav {
+  .header_nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    .header_list {
+      height: 100%;
+      padding: 0 .15rem;
+      right: 0;
+      width: 13rem;
+      border-top: 0.05rem solid #d5d7d9;
+    }
+  }
+
+  .open_btn {
+    display: none;
+  }
+
+  .close_btn {
+    display: block;
+  }
+}
+
+.close_nav {
+  .open_btn {
+    display: block;
+  }
+
+  .close_btn {
+    display: none;
+  }
+}
+
+
