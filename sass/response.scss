@@ -1,53 +1,379 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1700px) {}
 
-}
-
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 152vw) {
   .header_bg {
     box-shadow: 0 0 .53vw rgba(0, 0, 0, .4);
-  
+
     &.navFixed {
       box-shadow: 0px 0px .67vw .33vw rgba(0, 0, 0, 0.2);
     }
   }
-  
+
   .header_nav {
     height: 7.73vw;
+
     .header_logo {
       img {
         height: 7.73vw;
       }
     }
+
     .header_list {
       width: 6.67vw;
-  
+
       >li {
         height: 7.73vw;
         line-height: 7.73vw;
         margin: 0 1.67vw;
-  
+
         >a {
           font-size: 1.27vw;
         }
-  
+
         &:first-child {
           width: 3.33vw;
         }
       }
     }
-  
+
     .header_right {
       width: 3.33vw;
       height: 7.73vw;
-      a{
+
+      a {
         height: 2.27vw;
         line-height: 2.27vw;
         width: 2.27vw;
         font-size: 1vw;
       }
+    }
+  }
+
+  // 搜索框
+  .i_search {
+    width: calc(100% - 2vw);
+    height: 3.87vw;
+    border-radius: 1.73vw;
+    box-shadow: 0 3px 1.4vw rgba(0, 0, 0, .1);
+    margin-top: -1.93vw;
+    margin-bottom: 4.67vw;
+
+    .search_box {
+      padding-left: 1.67vw;
+      padding-right: 1.67vw;
+
+      .search_input {
+        width: 6.67vw;
+        height: 3.87vw;
+        font-size: 1vw;
+      }
+
+      .search_submit {
+
+        img {
+          height: 1.47vw;
+        }
+      }
+    }
+  }
+
+  .i_title {
+  
+    .title_name {
+      font-size: 2.2vw;
+  
+      &::before {
+        width: 5.53vw;
+        right: -6.53vw;
+        top: 1.6vw;
+      }
+    }
+  
+    .btn_list {
+  
+      li {
+        height: 2.53vw;
+        width: 13.2vw;
+        border-radius: 1.27vw;
+        line-height: 2.53vw;
+        margin-left: 2.53vw;
+  
+        a {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+
+  .ipro_wrapper {
+    margin-bottom: 6.67vw;
+  
+    .i_title {
+      margin-bottom: 3.2vw;
+    }
+  
+    .menu_list {
+      margin-bottom: 3.87vw;
+  
+      li {
+        width: 14.4vw;
+        height: 2.8vw;
+        line-height: 2.67vw;
+        margin-right: 1.33vw;
+  
+        a {
+          font-size: 1.07vw;
+        }
+  
+        &:hover {
+          border-radius: 1.4vw;
+        }
+      }
+    }
+  
+    .pro_list1,
+    .pro_list2 {
+  
+      li {
+        border-radius: 1.07vw;
+        margin-bottom: 3.07vw;
+  
+        .pro_name {
+          font-size: 1.73vw;
+          left: 4.8vw;
+          top: 5.33vw;
+        }
+  
+        .more_btn {
+          font-size: 1.73vw;
+          left: 4.8vw;
+          bottom: 6.67vw;
+        }
+      }
+    }
+  
+    .pro_list1 {
+      li {
+        width: calc(50% - 1.07vw);
+        margin-right: 2.13vw;
+      }
+    }
+  
+    .pro_list2 {
+      li {
+        width: calc(33.33% - 1.6vw);
+        margin-right: 2.4vw;
+  
+      }
+    }
+  }
+  
+  //应用领域
+  .iarea_wrapper {
+    margin-bottom: 10vw;
+  
+    .i_title {
+      margin-bottom: 3.33vw;
+    }
+  
+    .area_list {
+  
+      li {
+        width: 92.4vw;
+  
+        &:last-child {
+          width: 33.2vw;
+        }
+  
+        .main_img {
+          height: 62.67vw;
+          border-radius: 1.07vw;
+          margin-bottom: 1.8vw;
+        }
+  
+        .item_title {
+          font-size: 1.8vw;
+          margin-bottom: 1.33vw;
+        }
+  
+        .item_more {
+          font-size: 1.13vw;
+        }
+      }
+    }
+  }
+  
+  // 新闻中心
+  .inews_wrapper {
+    margin-bottom: 6vw;
+    .i_title {
+      margin-bottom: 1.47vw;
+    }
+  
+    .inews_arrow{
+      margin-bottom: 3.67vw;
+      .iconfont{
+        margin-right: .67vw;
+        width: 2.93vw;
+        height: 2.93vw;
+        line-height: 2.8vw;
+        font-size: 1.73vw;
+      }
+    }
+  
+    .i_newslist {
+      .i_list {
+  
+        li {
+          width: calc(33.33% - 1.47vw);
+          margin-right: 2.2vw;
+  
+          .item_img {
+            height: 32.4vw;
+            border-radius: 1.07vw;
+            margin-bottom: 1.33vw;
+          }
+  
+          .item_date{
+            font-size: 1.53vw;
+            margin-bottom: .67vw;
+            img{
+              margin-right: .67vw;
+            }
+          }
+  
+          .item_title {
+            font-size: 1.87vw;
+            margin-bottom: 2vw;
+          }
+  
+          .item_more {
+            font-size: 1.13vw;
+          }
+  
+        }
+      }
+    }
+  }
+  
+  // 合作伙伴
+  .icompanys_wrapper{
+    padding-top: 3.33vw;
+    .i_title{
+      margin-bottom: 3.67vw;
+    }
+    .companys_list{
+      .companys_item{
+        width: calc( 20% - .8vw);
+        height: 11.33vw;
+        margin-right: 1vw;
+        margin-bottom: 1vw;
+        border-radius: .53vw;
+        &:hover{
+          box-shadow: 0 0 .4vw rgba(0, 0, 0, .2);
+        }
+      }
+    }
+    .swiper-container{
+      padding-bottom: 6.67vw;
+      .swiper-pagination {
+        bottom: 3.33vw;
+    
+        .my-bullet {
+          width: .73vw;
+          height: .73vw;
+          margin:0 .47vw;
+        }
+    
+        .my-bullet-active {
+          width: .87vw;
+          height: .87vw;
+          margin:0 .4vw;
+        }
+      }
+    }
+  }
+  
+  //关于我们
+  .icontact_wrapper{
+    height: 17.4vw;
+    .icontact_box{
+      .title{
+        font-size: 1.87vw;
+      }
+      .icontact_btn{
+        height: 3.33vw;
+        line-height: 3.33vw;
+        width: 2.67vw;
+        font-size: 1.53vw;
+        border-radius: 1.53vw;
+        img{
+          margin-left: 1.6vw;
+        }
+      }
+    }
+  }
+  
+  // 底部
+  .footer{
+    padding-top: 5vw;
+    padding-bottom: 4.33vw;
+    .logo{
+      margin-bottom: 2.33vw;
+      img{
+        width: 22vw;
+      }
+    }
+    .footer_content{
+      .footer_title{
+        font-size: 1.53vw;
+        margin-bottom: 1.67vw;
+      }
+      .content_left{
+        .left_info{
+          p{
+            font-size: 1vw;
+            margin-bottom: .33vw;
+          }
+        }
+      }
+      .content_mid{
+        width: 6.67vw;
+        .mid_nav{
+          display: flex;
+          margin-bottom: 1.6vw;
+          li{
+            margin-right: 2.67vw;
+            a{
+              font-size: 1.07vw;
+            }
+          }
+        }
+        .mid_icon{
+          li{
+            margin-right: 1.07vw;
+            width: 2.33vw;
+            height: 2.33vw;
+            line-height: 2.07vw;
+            .iconfont{
+              font-size: 1.47vw;
+            }
+          }
+        }
+      }
+      .content_right{
+        padding-top: 1vw;
+      }
+    }
+  }
+  .footer_info{
+    height: 3.87vw;
+    line-height: 3.87vw;
+    .info_box{
+      font-size: .93vw;
     }
   }
 }

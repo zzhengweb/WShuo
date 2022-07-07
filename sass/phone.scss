@@ -39,7 +39,7 @@ button,
 textarea {
   background: none;
   outline: none;
-  border: 1px solid #ccc;
+  border: .025rem solid #ccc;
 }
 
 input:focus,
@@ -52,11 +52,11 @@ p {
   font-family: "SourceHanSansCN Regular";
 }
 
-a {
+a:hover,
+a:active,
+a:focus {
+  color: #019ED5;
   text-decoration: none;
-  color: #666666;
-  text-decoration: none;
-  font-family: "SourceHanSansCN Regular";
 }
 
 a:hover,
@@ -66,18 +66,29 @@ a:focus {
   text-decoration: none;
 }
 
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 
 body {
   background-color: #fff;
-  font-family: "SourceHanSansCN Normal", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
+  font-family: "SourceHanSansCN Regular", "Microsoft YaHei", Helvetica, Arial, "Helvetica Neue", sans-serif;
 }
 
 * {
   letter-spacing: -.02em;
 }
 
-.hidden-xs {
-  display: none;
+.hidden_xs {
+  display: none !important;
+}
+
+.container_zz {
+  width: 100%;
+  padding: 0 .375rem;
 }
 
 .header_bg {
@@ -131,7 +142,8 @@ body {
       align-items: center;
       border-bottom: none;
       margin-top: .375rem;
-      a{
+
+      a {
         display: inline-block;
         height: .85rem;
         line-height: .85rem;
@@ -243,3 +255,639 @@ body {
 }
 
 
+
+.banner {
+  margin-top: 2.2rem;
+  .container_zz {
+    width: 100%;
+    max-width: none;
+    padding: 0 .5rem;
+  }
+
+  .swiper-container {
+
+    .swiper-slide {
+      width: 100%;
+      height: 65.17%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .banner-prev,
+    .banner-next {
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      margin-top: -.5rem;
+
+      img {
+        height: 1rem;
+      }
+    }
+
+    .banner-prev {
+      left: 1rem;
+    }
+
+    .banner-next {
+      right: 1rem;
+    }
+
+    .swiper-pagination {
+      bottom: 2rem;
+
+      .my-bullet {
+        margin: 0 .2rem;
+        width: .4rem;
+        height: .4rem;
+        background-color: #bfbfbf;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      .my-bullet-active {
+        background-color: #000000;
+      }
+    }
+
+    .banner_info {
+      position: absolute;
+      height: 100%;
+      padding-top: .5rem;
+      z-index: 2;
+
+      .title1 {
+        font-size: .7rem;
+      }
+
+      .title2 {
+        font-size: .8rem;
+        font-family: "SourceHanSansCN Bold";
+        line-height: 1.4em;
+      }
+
+      .title3 {
+        font-size: .5rem;
+        font-family: "SourceHanSansCN Bold Normal";
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: .4rem;
+        }
+      }
+
+      .more {
+        width: 4rem;
+        height: 1.2rem;
+        background-color: #019ed5;
+        border-radius: .2rem;
+        text-align: center;
+
+        a {
+          font-size: .6rem;
+          color: white;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+// 搜索框
+.i_search {
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  height: 1.45rem;
+  border-radius: .725rem;
+  box-shadow: 0 .075rem .525rem rgba(0, 0, 0, .1);
+  margin-top: -.725rem;
+  position: relative;
+  z-index: 9;
+  background-color: white;
+  margin-bottom: 1.75rem;
+
+  form {
+    height: 100%;
+  }
+
+  .search_box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: .625rem;
+    padding-right: .625rem;
+
+    .search_input {
+      flex: 1;
+      width: 2.5rem;
+      height: 1.45rem;
+      font-family: "SourceHanSansCN Light";
+      border: none;
+      font-size: .375rem;
+
+      &::placeholder {
+        color: #9f9f9f;
+      }
+    }
+
+    .search_submit {
+      border: none;
+
+      img {
+        height: .55rem;
+      }
+    }
+  }
+}
+
+.i_title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .title_name {
+    font-size: .825rem;
+    font-family: "SourceHanSansCN Bold";
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: "";
+      width: 2rem;
+      height: .05rem;
+      background-color: #dcdcdc;
+      position: absolute;
+      left: 3.8rem;
+      top: .525rem;
+    }
+  }
+
+  .btn_list {
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      background-color: #019ed5;
+      height: .95rem;
+      width: 3.7rem;
+      border-radius: .475rem;
+      line-height: .95rem;
+      text-align: center;
+      box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .2);
+      transition: all .1s;
+      margin-left: .95rem;
+
+      a {
+        font-family: "SourceHanSansCN Light";
+        font-size: .375rem;
+        color: #fff;
+      }
+
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 .075rem .075rem .025rem rgba(0, 0, 0, .2);
+      }
+    }
+  }
+}
+
+.ipro_wrapper {
+  margin-bottom: 1rem;
+
+  .i_title {
+    margin-bottom: .5rem;
+  }
+
+  .menu_list {
+    list-style: none;
+    display: flex;
+    margin-bottom: .5rem;
+
+    li {
+      width: 5.4rem;
+      height: 1.05rem;
+      line-height: 1rem;
+      border: .025rem solid;
+      text-align: center;
+      margin-right: .5rem;
+      border-color: rgb(1, 158, 213, 1);
+      border-radius: .525rem;
+      a {
+        font-size: .4rem;
+        color: #019ed5;
+        font-family: "SourceHanSansCN Light";
+      }
+    }
+  }
+
+  .pro_list1,
+  .pro_list2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      background-color: #f4f3f8;
+      border-radius: .4rem;
+      overflow: hidden;
+      margin-bottom: 1.225rem;
+      position: relative;
+      width: 100%;
+      height: 0;
+
+      .pro_name {
+        position: absolute;
+        z-index: 2;
+        font-size: 1rem;
+        left: 1rem;
+        top: 1rem;
+      }
+
+      .more_btn {
+        position: absolute;
+        z-index: 2;
+        font-size: .65rem;
+        left: 1rem;
+        bottom: 1rem;
+        transition: all .5s;
+        img{
+          width: 1.5rem;
+        }
+      }
+
+      .img_main {
+        transition: all .5s;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .pro_list1{
+    li{
+      padding-top: 49.93%;
+    }
+  }
+  .pro_list2{
+    li{
+      padding-top: 49.93%;
+    }
+  }
+}
+
+//应用领域
+.iarea_wrapper {
+  margin-bottom: 1rem;
+
+  .i_title {
+    margin-bottom: .5rem;
+  }
+
+  .area_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      width: 100%;
+
+      .main_img {
+        width: 100%;
+        overflow: hidden;
+        border-radius: .4rem;
+        margin-bottom: .5rem;
+        img{
+          width: 100%;
+        }
+      }
+
+      &:last-child {
+        width: 60%;
+      }
+
+      .item_title {
+        font-size: 1rem;
+        font-family: "SourceHanSansCN Normal";
+        margin-bottom: .5rem;
+
+        a {
+          color: #000000;
+        }
+      }
+
+      .item_more {
+        font-size: .6rem;
+        font-family: "SourceHanSansCN Normal";
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}
+
+// 新闻中心
+.inews_wrapper {
+  margin-bottom: 2.25rem;
+  .i_title {
+    margin-bottom: .55rem;
+  }
+
+  .inews_arrow{
+    display: flex;
+    margin-bottom: 1.375rem;
+    cursor: pointer;
+    .iconfont{
+      margin-right: .25rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      text-align: center;
+      line-height: 1.05rem;
+      border-radius: 50%;
+      font-size: .65rem;
+      color: #bfbfbf;
+      border-color: #bfbfbf;
+      border-width: .025rem;
+      border-style: solid;
+      transition: all .5s;
+      &:hover{
+        color: #019ed5;
+        border-color: #019ed5;
+      }
+      &.pre{
+        transform: rotate(-90deg);
+      }
+      &.next{
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .i_newslist {
+    .i_list {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 100%;
+
+        .item_img {
+          height: 0;
+          padding-top: 70.59%;
+          width: 100%;
+          overflow: hidden;
+          border-radius: .4rem;
+          margin-bottom: .5rem;
+          position: relative;
+          img{
+            transition: all .5s;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+        }
+
+        .item_date{
+          font-size: .8rem;
+          color: #717171;
+          margin-bottom: .25rem;
+          display: flex;
+          align-items: center;
+          img{
+            margin-right: .25rem;
+            height: .8rem;
+          }
+        }
+
+        .item_title {
+          font-size: 1rem;
+          color: #000000;
+          margin-bottom: .75rem;
+        }
+
+        .item_more {
+          font-size: .6rem;
+          color: #717171;
+          margin-bottom: 1rem;
+        }
+
+      }
+    }
+  }
+}
+
+// 合作伙伴
+.icompanys_wrapper{
+  background-color: #fafafa;
+  padding-top: 1.25rem;
+  .i_title{
+    margin-bottom: 1.375rem;
+  }
+  .companys_list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .companys_item{
+      width: calc( 50% - .15rem);
+      height: 3rem;
+      margin-right: .3rem;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: .3rem;
+      transition: all .5s;
+      border-radius: .2rem;
+      cursor: pointer;
+      overflow: hidden;
+      img{
+        transition: all .5s;
+        height: 70%;
+      }
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+    }
+  }
+  .swiper-container{
+    padding-bottom: 2.5rem;
+    .swiper-pagination {
+      bottom: 1.25rem;
+  
+      .my-bullet {
+        width: .275rem;
+        height: .275rem;
+        background-color: #d1d1d1;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 50%;
+        margin:0 .175rem;
+      }
+  
+      .my-bullet-active {
+        background-color: #019ed5;
+        width: .325rem;
+        height: .325rem;
+        margin:0 .15rem;
+      }
+    }
+  }
+}
+
+//关于我们
+.icontact_wrapper{
+  background-color: #019ed5;
+  height: 8rem;
+  .container_zz{
+    height: 100%;
+  }
+  .icontact_box{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    .title{
+      font-size: .625rem;
+      color: #fff;
+      font-family: "SourceHanSansCN Light";
+      margin-bottom: 1rem;
+    }
+    .icontact_btn{
+      height: 1.4rem;
+      line-height: 1.4rem;
+      text-align: center;
+      width: 6rem;
+      display: inline-block;
+      background-color: white;
+      color: #019ed5;
+      font-family: "SourceHanSansCN Bold";
+      font-size: .5rem;
+      border-radius: .375rem;
+      img{
+        margin-left: .525rem;
+        width: 1rem;
+      }
+      a{
+        color: #019ed5;
+      }
+    }
+  }
+}
+
+// 底部
+.footer{
+  background-color: #e7e8ea;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .logo{
+    margin-bottom: .5rem;
+    img{
+      width: 5.75rem;
+    }
+  }
+  .footer_content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .footer_title{
+      font-size: .8rem;
+      color: #262626;
+      font-family: "SourceHanSansCN Medium";
+      margin-bottom: .5rem;
+    }
+    .content_left{
+      width: 100%;
+      margin-bottom: 1rem;
+      .left_info{
+        p{
+          color: #666667;
+          font-size: .6rem;
+          font-family: "SourceHanSansCN Regular";
+          margin-bottom: .25rem;
+        }
+      }
+    }
+    .content_mid{
+      width: 100%;
+      margin-bottom: 1rem;
+      .mid_nav{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: .525rem;
+        li{
+          width: 25%;
+          margin-bottom: .5rem;
+          a{
+            color: #484848;
+            font-size: .6rem;
+            font-family: "SourceHanSansCN Regular";
+          }
+        }
+      }
+      .mid_icon{
+        display: flex;
+        li{
+          margin-right: .4rem;
+          width: 1.6rem;
+          height: 1.6rem;
+          line-height: 1.5rem;
+          border-radius: 50%;
+          border: .05rem solid #cdcdcd;
+          text-align: center;
+          .iconfont{
+            color: #cdcdcd;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .content_right{
+      padding-top: .375rem;
+      img{
+        width: 4rem;
+      }
+    }
+  }
+}
+.footer_info{
+  background-color: #e7e8ea;
+  border-top: .025rem solid #c5c6c7;
+  padding:.5rem 0;
+  .container_zz{
+    height: 100%;
+  }
+  .info_box{
+    height: 100%;
+    color: #767676;
+    font-size: .5rem;
+    font-family: "SourceHanSansCN Regular";
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    div{
+      width: 100%;
+      text-align: left;
+      line-height: .9rem;
+      span{
+        width: 100%;
+        display: inline-block;
+      }
+    }
+  }
+}
