@@ -3,7 +3,7 @@
 
 @media screen and (max-width: 1700px) {}
 
-@media screen and (max-width: 152vw) {
+@media screen and (max-width: 1530px) {
   .header_bg {
     box-shadow: 0 0 .53vw rgba(0, 0, 0, .4);
 
@@ -140,6 +140,7 @@
       li {
         border-radius: 1.07vw;
         margin-bottom: 3.07vw;
+        height: 24.4vw;
   
         .pro_name {
           font-size: 1.73vw;

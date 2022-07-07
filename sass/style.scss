@@ -5,9 +5,9 @@
 }
 
 @font-face {
-  font-family: "DIN-Bold";
+  font-family: "DIN-Medium";
   /* Project id 2621899 */
-  src: url('../fonts/DIN-Bold.otf') format('truetype');
+  src: url('../fonts/DIN-Medium.otf') format('truetype');
 }
 
 @font-face {
@@ -436,6 +436,7 @@ body {
       overflow: hidden;
       margin-bottom: 49px;
       position: relative;
+      height: 366px;
 
       .pro_name {
         position: absolute;
@@ -460,10 +461,12 @@ body {
 
       .img_main {
         transition: all .5s;
-        width: 100%;
         height: 100%;
-        position: relative;
+        position: absolute;
         z-index: 1;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
       }
 
       &:hover {
@@ -823,5 +826,73 @@ body {
     font-family: "SourceHanSansCN Light";
     display: flex;
     justify-content: space-between;
+  }
+}
+
+// 公司简介
+.inner_title{
+  width: 675px;
+  margin:0 auto;
+  margin-bottom: 34px;
+  .title_cn{
+    font-size: 40px;
+    color: #333333;
+    font-family: "SourceHanSansCN Bold";
+    text-align: center;
+    position: relative;
+    line-height: 1em;
+    &::before,&::after{
+      width: 195px;
+      background-color: #8e8e8e;
+      height: 1px;
+      content: "";
+      position: absolute;
+      top: 50%;
+    }
+    &::before{
+      left: 0;
+    }
+    &::after{
+      right: 0;
+    }
+  }
+  .title_en{
+    font-size: 22px;
+    color: #999999;
+    font-family: "DIN-Medium";
+    text-align: center;
+  }
+}
+
+.intro_1{
+  padding: 92px 170px 0 170px;
+  p{
+    font-size: 16px;
+    line-height: 34px;
+    color: #636363;
+    font-family: "SourceHanSansCN Light";
+    margin-bottom: 0;
+  }
+  .company_img{
+    height: 108px;
+    width: 100%;
+    margin-top: 40px;
+    img{
+      width: 100%;
+    }
+  }
+}
+.intro1_block{
+  height: 385px;
+  background-color: #f6f6f6 ;
+  .intro_1{
+    padding: 0 170px;
+  }
+  .blue_block{
+    width: 750px;
+    height: 285px;
+    margin-left: -22px;
+    margin-bottom: -22px;
+    background-color: #019ed5;
   }
 }
