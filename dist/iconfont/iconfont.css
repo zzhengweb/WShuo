@@ -11,25 +11,6 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-Facebook:before {
-  content: "\e695";
-}
-
-.icon-bxl-facebook:before {
-  content: "\e634";
-}
-
-.icon-bxl-linkedin:before {
-  content: "\e636";
-}
-
-.icon-bxl-twitter:before {
-  content: "\e637";
-}
-
-.icon-Rrl_s_065:before {
-  content: "\e608";
+  outline: none;
 }
 

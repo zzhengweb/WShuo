@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>微烁光学科技</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content="">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  <link rel="stylesheet" href="iconfont/iconfont.css">
+
+  <!--引用百度地图API-->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DOY76srUcSCyvMGWxbtIYp246TCG5n8D"></script>
+  <script type="text/javascript"
+    src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+  <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <nav class="header_bg close_nav" id="change_nav">
+    <div class="container_zz">
+      <div class="header_nav">
+        <div class="change_btn visible_xs" id="change_btn">
+          <img src="./images/open.jpg" class="open_btn" />
+          <img src="./images/close.jpg" class="close_btn" />
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull" /></a>
+        </div>
+        <ul class="header_list">
+          <li class="active"><a href="index.html">首页</a></li>
+          <li><a href="intro.html">公司介绍</a></li>
+          <li><a href="pro.html">产品中心</a></li>
+          <li><a href="application.html">应用领域</a></li>
+          <li><a href="news.html">新闻中心</a></li>
+          <li><a href="partners.html">合作伙伴</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li class="header_right visible_xs"><a href="#">EN</a></li>
+        </ul>
+        <div class="header_right">
+          <a href="#">EN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 海报 -->
+  <div class="inner_banner banner_white">
+    <img src="./images/contact/banner.jpg" />
+    <div class="container_zz">
+      <div class="inner_banner_bg">
+        <div class="title1">联系我们</div>
+        <div class="title2">诚信文化,卓越品质</div>
+      </div>
+    </div>
+  </div>
+  <!-- 应用邻域  -->
+  <div class="contact_wrapper">
+    <div class="container_zz">
+      <ul class="contact_top">
+        <li>
+          <div class="item_icon">
+            <img src="./images/contact/icon1.jpg" />
+          </div>
+          <div class="item_title">联系方式</div>
+          <div class="item_info">13024595802</div>
+        </li>
+        <li>
+          <div class="item_icon">
+            <img src="./images/contact/icon2.jpg" />
+          </div>
+          <div class="item_title">邮箱</div>
+          <div class="item_info">ws005@sh-winsure.com </div>
+        </li>
+        <li>
+          <div class="item_icon">
+            <img src="./images/contact/icon3.jpg" />
+          </div>
+          <div class="item_title">网址</div>
+          <div class="item_info">www.sh-winsure.com</div>
+        </li>
+        <li>
+          <div class="item_icon">
+            <img src="./images/contact/icon4.jpg" />
+          </div>
+          <div class="item_title">地址</div>
+          <div class="item_info">江苏苏州太仓市城厢镇老浏河路15号</div>
+        </li>
+      </ul>
+    </div>
+    <div class="contact_map">
+      <div class="map" id="map_box"></div>
+      <div class="container_zz">
+        <div class="contact_form">
+          <form>
+            <div class="form_title">
+              <div class="title_cn">欢迎与我们联系</div>
+              <div class="title_en">Welcome to contact us</div>
+            </div>
+            <div class="form_main">
+              <div class="main_col">
+                <div class="col_label">公司名称:</div>
+                <div class="col_input">
+                  <input />
+                </div>
+              </div>
+              <div class="main_col">
+                <div class="col_label">您的姓名:</div>
+                <div class="col_input">
+                  <input />
+                </div>
+              </div>
+            </div>
+            <div class="form_main">
+              <div class="main_col">
+                <div class="col_label">您的电话:</div>
+                <div class="col_input">
+                  <input />
+                </div>
+              </div>
+              <div class="main_col">
+                <div class="col_label">您的邮箱:</div>
+                <div class="col_input">
+                  <input />
+                </div>
+              </div>
+            </div>
+            <div class="form_main2">
+              <div class="main_col">
+                <div class="col_label">您的电话:</div>
+                <div class="col_input">
+                  <textarea></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="submit_btn">发送</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 关于我们 -->
+  <div class="icontact_wrapper">
+    <div class="container_zz">
+      <div class="icontact_box">
+        <div class="title">微烁成立于2017年。经过4年的发展，为各个细分行业有特种照明需求的客户定制解决方案。</div>
+        <a href="contact.html" class="icontact_btn">关于我们<img src="./images/icon3.png" /></a>
+      </div>
+    </div>
+  </div>
+  <!-- 底部 -->
+  <footer class="footer">
+    <div class="container_zz">
+      <div class="logo">
+        <img src="./images/footer/logo.png" />
+      </div>
+      <div class="footer_content">
+        <div class="content_left">
+          <div class="footer_title">联系方式</div>
+          <div class="left_info">
+            <p>华东：13024595802</p>
+            <p>邮箱：zhangqingfeng@sh-winsure.com</p>
+            <p>网址：http://www.sh-winsure.com/</p>
+            <p>地址：江苏苏州太仓市城厢镇老浏河路15号</p>
+          </div>
+        </div>
+        <div class="content_mid">
+          <div class="footer_title">网站地图</div>
+          <ul class="mid_nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="intro.html">公司介绍</a></li>
+            <li><a href="pro.html">产品中心</a></li>
+            <li><a href="application.html">应用领域</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="partners.html">合作伙伴</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+          <ul class="mid_icon">
+            <li><a href="#" class="iconfont">&#xe695;</a></li>
+            <li><a href="#" class="iconfont">&#xe636;</a></li>
+            <li><a href="#" class="iconfont">&#xe637;</a></li>
+          </ul>
+        </div>
+        <div class="content_right">
+          <img src="./images/footer/ewm.jpg" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer_info">
+    <div class="container_zz">
+      <div class="info_box">
+        <div>版权所有：苏州微烁光学科技有限公司<span>备案号：苏ICP备0000000000号</span></div>
+        <div>技术支持：<a href="#">亿韵商务</a></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.2.2.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/flexible.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    //创建和初始化地图函数：
+    function initMap() {
+      createMap(); //创建地图
+      // setMapEvent(); //设置地图事件
+      addMapOverlay(); //向地图添加覆盖物
+      // if(document.body.clientWidth>768){
+      //     addMapControl(); //向地图添加控件
+      // }
+    }
+
+    function createMap() {
+      map = new BMap.Map("map_box");
+      poi = new BMap.Point(121.114435, 31.434305);
+      map.centerAndZoom(poi, 24);
+    }
+
+    function setMapEvent() {
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+
+    function addClickHandler(target, window) {
+      target.addEventListener("click", function () {
+        target.openInfoWindow(window);
+      });
+    }
+
+    function addMapOverlay() {
+      // 百度地图API功能
+      var content = `
+            <div class="pop_map">
+              <div class="pop_icon"><img src="./images/contact/icon5.png" /></div>
+              <div class="pop_content">
+                <div class="pop_title">苏州微烁公司</div>
+                <div class="pop_addr">江苏苏州太仓市城厢镇<br/>老浏河路15号</div>
+              </div>
+        `;
+
+      //创建检索信息窗口对象
+      var searchInfoWindow = null;
+      searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+        title: "苏州牛膜王材料科技有限公司", //标题
+        width: 290, //宽度
+        height: 110, //高度
+        panel: "panel", //检索结果面板
+        enableAutoPan: true, //自动平移
+        enableSendToPhone: false,
+        searchTypes: []
+      });
+      let isOpen = false;
+      var marker = new BMap.Marker(poi); //创建marker对象
+      marker.addEventListener("click", function (e) {
+        e.domEvent.preventDefault();
+        e.domEvent.stopPropagation();
+        isOpen ? searchInfoWindow.close(marker) : searchInfoWindow.open(marker);
+        isOpen = !isOpen;
+      })
+      map.addEventListener("click", function (e) {
+        isOpen && searchInfoWindow.close(marker);
+        isOpen = false;
+      })
+      map.addOverlay(marker); //在地图中添加marker
+    }
+    //向地图添加控件
+    function addMapControl() {
+      var scaleControl = new BMap.ScaleControl({
+        anchor: BMAP_ANCHOR_BOTTOM_LEFT
+      });
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({
+        anchor: BMAP_ANCHOR_TOP_LEFT,
+        type: BMAP_NAVIGATION_CONTROL_LARGE
+      });
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({
+        anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+        isOpen: true
+      });
+      map.addControl(overviewControl);
+    }
+    var map, poi;
+    initMap();
+  </script>
+</body>
+
+</html>

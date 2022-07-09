@@ -1,9 +1,20 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media screen and (max-width: 1700px) {}
+@media screen and (min-width: 1920px) {
+  .inner_banner {
+
+    img {
+      width: 100%;
+    }
+  }
+}
 
 @media screen and (max-width: 1530px) {
+  .container_zz {
+    padding: 0 1vw;
+  }
+
   .header_bg {
     box-shadow: 0 0 .53vw rgba(0, 0, 0, .4);
 
@@ -81,26 +92,26 @@
   }
 
   .i_title {
-  
+
     .title_name {
       font-size: 2.2vw;
-  
+
       &::before {
         width: 5.53vw;
         right: -6.53vw;
         top: 1.6vw;
       }
     }
-  
+
     .btn_list {
-  
+
       li {
         height: 2.53vw;
         width: 13.2vw;
         border-radius: 1.27vw;
         line-height: 2.53vw;
         margin-left: 2.53vw;
-  
+
         a {
           font-size: 1vw;
         }
@@ -110,44 +121,44 @@
 
   .ipro_wrapper {
     margin-bottom: 6.67vw;
-  
+
     .i_title {
       margin-bottom: 3.2vw;
     }
-  
+
     .menu_list {
       margin-bottom: 3.87vw;
-  
+
       li {
         width: 14.4vw;
         height: 2.8vw;
         line-height: 2.67vw;
         margin-right: 1.33vw;
-  
+
         a {
           font-size: 1.07vw;
         }
-  
+
         &:hover {
           border-radius: 1.4vw;
         }
       }
     }
-  
+
     .pro_list1,
     .pro_list2 {
-  
+
       li {
         border-radius: 1.07vw;
         margin-bottom: 3.07vw;
         height: 24.4vw;
-  
+
         .pro_name {
           font-size: 1.73vw;
           left: 4.8vw;
           top: 5.33vw;
         }
-  
+
         .more_btn {
           font-size: 1.73vw;
           left: 4.8vw;
@@ -155,68 +166,74 @@
         }
       }
     }
-  
+
     .pro_list1 {
       li {
         width: calc(50% - 1.07vw);
         margin-right: 2.13vw;
       }
     }
-  
+
     .pro_list2 {
       li {
         width: calc(33.33% - 1.6vw);
         margin-right: 2.4vw;
-  
+
       }
     }
   }
-  
+
   //应用领域
   .iarea_wrapper {
     margin-bottom: 10vw;
-  
+
     .i_title {
       margin-bottom: 3.33vw;
     }
-  
+
     .area_list {
-  
+
       li {
-        width: 92.4vw;
-  
+        width: 62.4vw;
+
         &:last-child {
           width: 33.2vw;
         }
-  
+
         .main_img {
-          height: 62.67vw;
+          height: 42.67vw;
           border-radius: 1.07vw;
           margin-bottom: 1.8vw;
+          img{
+            width: 100%;
+            height: 100%;
+          }
         }
-  
+
         .item_title {
           font-size: 1.8vw;
           margin-bottom: 1.33vw;
         }
-  
+
         .item_more {
           font-size: 1.13vw;
         }
       }
     }
   }
-  
+
   // 新闻中心
   .inews_wrapper {
     margin-bottom: 6vw;
+
     .i_title {
       margin-bottom: 1.47vw;
     }
-  
-    .inews_arrow{
+
+    .inews_arrow {
       margin-bottom: 3.67vw;
-      .iconfont{
+
+      .iconfont {
         margin-right: .67vw;
         width: 2.93vw;
         height: 2.93vw;
@@ -224,157 +241,805 @@
         font-size: 1.73vw;
       }
     }
-  
+
     .i_newslist {
       .i_list {
-  
+
         li {
           width: calc(33.33% - 1.47vw);
           margin-right: 2.2vw;
-  
+
           .item_img {
-            height: 32.4vw;
+            height: 21vw;
             border-radius: 1.07vw;
             margin-bottom: 1.33vw;
+            img{
+              width: 100%;
+              height: 100%;
+            }
           }
-  
-          .item_date{
+
+          .item_date {
             font-size: 1.53vw;
             margin-bottom: .67vw;
-            img{
+
+            img {
               margin-right: .67vw;
             }
           }
-  
+
           .item_title {
             font-size: 1.87vw;
             margin-bottom: 2vw;
           }
-  
+
           .item_more {
             font-size: 1.13vw;
           }
-  
+
         }
       }
     }
   }
-  
+
   // 合作伙伴
-  .icompanys_wrapper{
+  .icompanys_wrapper {
     padding-top: 3.33vw;
-    .i_title{
+
+    .i_title {
       margin-bottom: 3.67vw;
     }
-    .companys_list{
-      .companys_item{
-        width: calc( 20% - .8vw);
+
+    .companys_list {
+      .companys_item {
+        width: calc(20% - .8vw);
         height: 11.33vw;
         margin-right: 1vw;
         margin-bottom: 1vw;
         border-radius: .53vw;
-        &:hover{
+
+        &:hover {
           box-shadow: 0 0 .4vw rgba(0, 0, 0, .2);
         }
       }
     }
-    .swiper-container{
+
+    .swiper-container {
       padding-bottom: 6.67vw;
+
       .swiper-pagination {
         bottom: 3.33vw;
-    
+
         .my-bullet {
           width: .73vw;
           height: .73vw;
-          margin:0 .47vw;
+          margin: 0 .47vw;
         }
-    
+
         .my-bullet-active {
           width: .87vw;
           height: .87vw;
-          margin:0 .4vw;
+          margin: 0 .4vw;
         }
       }
     }
   }
-  
+
   //关于我们
-  .icontact_wrapper{
+  .icontact_wrapper {
     height: 17.4vw;
-    .icontact_box{
-      .title{
+
+    .icontact_box {
+      .title {
         font-size: 1.87vw;
       }
-      .icontact_btn{
+
+      .icontact_btn {
         height: 3.33vw;
         line-height: 3.33vw;
-        width: 2.67vw;
+        width: 14vw;
         font-size: 1.53vw;
         border-radius: 1.53vw;
-        img{
+
+        img {
           margin-left: 1.6vw;
         }
       }
     }
   }
-  
+
   // 底部
-  .footer{
+  .footer {
     padding-top: 5vw;
     padding-bottom: 4.33vw;
-    .logo{
+
+    .logo {
       margin-bottom: 2.33vw;
-      img{
+
+      img {
         width: 22vw;
       }
     }
-    .footer_content{
-      .footer_title{
+
+    .footer_content {
+      .footer_title {
         font-size: 1.53vw;
         margin-bottom: 1.67vw;
       }
-      .content_left{
-        .left_info{
-          p{
+
+      .content_left {
+        .left_info {
+          p {
             font-size: 1vw;
             margin-bottom: .33vw;
           }
         }
       }
-      .content_mid{
+
+      .content_mid {
         width: 6.67vw;
-        .mid_nav{
+
+        .mid_nav {
           display: flex;
           margin-bottom: 1.6vw;
-          li{
+
+          li {
             margin-right: 2.67vw;
-            a{
+
+            a {
               font-size: 1.07vw;
             }
           }
         }
-        .mid_icon{
-          li{
+
+        .mid_icon {
+          li {
             margin-right: 1.07vw;
             width: 2.33vw;
             height: 2.33vw;
             line-height: 2.07vw;
-            .iconfont{
+
+            .iconfont {
               font-size: 1.47vw;
             }
           }
         }
       }
-      .content_right{
+
+      .content_right {
         padding-top: 1vw;
       }
     }
   }
-  .footer_info{
+
+  .footer_info {
     height: 3.87vw;
     line-height: 3.87vw;
-    .info_box{
+
+    .info_box {
       font-size: .93vw;
+    }
+  }
+
+  .inner_banner {
+    height: 445px;
+    position: relative;
+    padding-top: 172px;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    &.banner_white {
+      .inner_banner_bg {
+        .title1 {
+          color: #ffffff;
+        }
+
+        .title2 {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .inner_banner {
+    height: 29.67vw;
+    padding-top: 11.47vw;
+
+    .inner_banner_bg {
+      height: 7.8vw;
+      width: 57.8vw;
+      padding-left: 19.67vw;
+      padding-top: 1vw;
+
+      .title1 {
+        font-size: 2.33vw;
+      }
+
+      .title2 {
+        font-size: 1.4vw;
+      }
+    }
+  }
+
+  // 公司简介
+  .inner_title {
+    width: 45vw;
+    margin-bottom: 2.27vw;
+
+    .title_cn {
+      font-size: 2.67vw;
+
+      &::before,
+      &::after {
+        width: 13vw;
+      }
+    }
+
+    .title_en {
+      font-size: 1.47vw;
+      margin-bottom: .53vw;
+    }
+
+    .title_small {
+      font-size: 1.33vw;
+    }
+  }
+
+  .intro_1 {
+    padding: 6.13vw 11.33vw 0 11.33vw;
+
+    p {
+      font-size: 1.07vw;
+      line-height: 2.27vw;
+    }
+
+    .company_img {
+      height: 7.2vw;
+      margin-top: 2.67vw;
+    }
+  }
+
+  .intro1_block {
+    height: 25.67vw;
+
+    .intro_1 {
+      padding: 0 11.33vw;
+    }
+
+    .blue_block {
+      width: 50vw;
+      height: 18vw;
+      margin-left: -1.47vw;
+      margin-bottom: -1.47vw;
+    }
+  }
+
+  .intro_2 {
+    height: 20vw;
+  
+    .black_block {
+      width: calc(50% + 14vw);
+    }
+  
+    .intro_list {
+      width: 64vw;
+      height: 20vw;
+  
+      li {
+        width: 28.67vw;
+        margin: 1.2vw 0;
+        margin-right: .5vw;
+        >img{
+          width: 4.6vw;
+        }
+  
+        .item_content {
+          padding-left: .67vw;
+  
+          .item_title {
+            font-size: 1.2vw;
+          }
+  
+          .item_info {
+            font-size: .93vw;
+          }
+        }
+      }
+    }
+  }
+
+  .intro_3 {
+    padding-top: 6.33vw;
+    margin-bottom: 8.66vw;
+  
+    .intro3_body {
+  
+      .intro3_left {
+        height: 28.67vw;
+        width: 64vw;
+  
+        .info {
+          font-size: 1.33vw;
+          line-height: 2.27vw;
+          height: 7.6vw;
+          width: 42vw;
+          padding-top: 1.47vw;
+          padding-left: 2.67vw;
+        }
+      }
+  
+      .intro3_right {
+        width: .67vw;
+        border-top: .47vw solid #019ed5;
+  
+        .intro3_item {
+          width: 28.8vw;
+          padding: 2.67vw 0;
+  
+          .item_img {
+            margin-right: 1.2vw;
+  
+            img {
+              width: 6.87vw;
+            }
+          }
+  
+          .item_content {
+            .item_title {
+              font-size: 1.47vw;
+            }
+  
+            .item_info {
+              font-size: 1.07vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .intro_4 {
+    height: 54.67vw;
+  
+    .inner_title {
+      margin-bottom: 5.33vw;
+    }
+  
+    .intro4_swiper {
+      height: 28.67vw;
+  
+      .container_zz {
+        padding: 3.6vw 4.53vw;
+      }
+  
+      .swiper-container {
+        width: 67.8vw;
+      }
+  
+      .banner-prev {
+        left: 3.67vw;
+      }
+  
+      .banner-next {
+        right: 25.67vw;
+      }
+    }
+  }
+
+  .type_menu {
+    height: 4.4vw;
+    padding-left: .67vw;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+  
+    li {
+      line-height: 4.4vw;
+      margin: 0 1.67vw;
+  
+      a {
+        font-size: 1.067vw;
+      }
+  
+      &::before {
+        height: .2vw;
+      }
+    }
+  }
+
+  .pro_page_list {
+    margin-bottom: 2vw;
+  
+    li {
+      margin-right: 3.2vw;
+      width: calc(33.33% - 32px);
+      margin-bottom: 3.067vw;
+  
+      .item_img {
+        padding-top: 20.93vw;
+        .item_view{
+          img{
+            width: 6.067vw;
+          }
+        }
+      }
+  
+      .item_content {
+        height: 5vw;
+        padding: 0 1vw 0 .8vw;
+  
+        .item_title {
+          font-size: 1.067vw;
+        }
+  
+        .item_more {
+          width: 7.67vw;
+          height: 2.67vw;
+          border-radius: 1.33vw;
+          line-height: 2.67vw;
+  
+          a {
+            font-size: 1.067vw;
+          }
+        }
+      }
+    }
+  }
+
+  .application_wrapper {
+    padding-bottom: 7vw;
+    padding-top: 5.87vw;
+  
+    li {
+  
+      .item_content {
+        padding-top: 7.33vw;
+        padding-left: 5.07vw;
+  
+        .item_title {
+          font-size: 2.67vw;
+          margin-bottom: .13vw;
+        }
+  
+        .item_detail {
+          font-size: 1.067vw;
+          margin-bottom: 2vw;
+        }
+  
+        .item_more {
+          width: 9.33vw;
+          height: 2.93vw;
+          line-height: 2.93vw;
+          border-radius: 1.47vw;
+  
+          a {
+            font-size: 1vw;
+          }
+        }
+      }
+    }
+  }
+
+  .news_wrapper {
+    padding-top: 4.33vw;
+  
+    .news_nav {
+  
+      .nav_left {
+  
+        li {
+          width: 14.53vw;
+          height: 4.53vw;
+          line-height: 4.53vw;
+  
+          a {
+            font-size: 1.33vw;
+          }
+        }
+      }
+  
+      .nav_search {
+        height: 4.53vw;
+        line-height: 4.53vw;
+  
+        .search_icon {
+          margin-right: 1vw;
+        }
+  
+        input {
+          font-size: 1.067vw;
+          width: 16vw;
+        }
+      }
+    }
+  
+    .news_header {
+      .header_item {
+        padding: 2vw 3vw 2vw 2.27vw;
+  
+        .header_img {
+          width: 29.33vw;
+          img{
+            width: 100%;
+          }
+        }
+  
+        .header_content {
+          width: 6.67vw;
+          padding-top: 1.33vw;
+          padding-left: 2.33vw;
+  
+          .header_title {
+            font-size: 1.6vw;
+            margin-bottom: 1.33vw;
+          }
+  
+          .header_detail {
+            margin-bottom: 3.47vw;
+            line-height: 1.6vw;
+            height: 7.2vw;
+  
+            p {
+              font-size: 1.067vw;
+            }
+          }
+  
+          .header_other {
+            .header_date {
+              font-size: 1.067vw;
+            }
+          }
+        }
+      }
+  
+      .header_btn {
+        padding-right: 2.67vw;
+        padding-bottom: 2.67vw;
+  
+        .btn_pre,
+        .btn_next {
+          margin-left: 1.33vw;
+        }
+      }
+    }
+  
+    .news_list {
+      margin-bottom: 4vw;
+  
+      li {
+        padding: 2.33vw 0;
+  
+        .item_date {
+          width: 8.8vw;
+          height: 8.8vw;
+  
+          .date_year {
+            font-size: 1.6vw;
+            margin-bottom: .33vw;
+          }
+  
+          .date_day {
+            font-size: 4vw;
+          }
+        }
+  
+        .item_content {
+          width: 6.67vw;
+          padding-left: 1.67vw;
+          padding-right: 2vw;
+  
+          .item_title {
+            font-size: 1.4vw;
+            margin-bottom: 2.67vw;
+          }
+  
+          .item_detail {
+            font-size: 1.067vw;
+            line-height: 1.87vw;
+            height: 3.73vw;
+          }
+        }
+      }
+    }
+  
+    .pagination_wrapper {
+      margin-bottom: 6.33vw;
+    }
+  }
+
+  .partners_wrapper {
+    padding-top: 8vw;
+    padding-bottom: 30vw;
+  
+    .inner_title {
+      width: 61.53vw;
+  
+      .title_cn {
+        margin-bottom: .53vw;
+      }
+    }
+  
+    .partners_list {
+      li {
+        margin-right: 2.796vw;
+        width: calc(16.666% - 2.33vw);
+        margin-bottom: 2.13vw;
+        height: 9.2vw;
+      }
+    }
+  }
+
+  .contact_top {
+    padding-top: 7vw;
+    padding-bottom: 8.4vw;
+  
+    li {
+      margin-right: 3.73vw;
+      width: calc(25% - 2.8vw);
+      height: 22.67vw;
+      margin-right: 3.73vw;
+  
+      .item_icon {
+        width: 5.6vw;
+        height: 5.6vw;
+        margin-bottom: 1vw;
+        img{
+          width: 3.67vw;
+        }
+      }
+  
+      .item_title {
+        font-size: 1.2vw;
+        line-height: 2.07vw;
+        margin-bottom: 30px;
+  
+        &::after {
+          width: 2.067vw;
+          height: 1px;
+  
+        }
+      }
+  
+      .item_info {
+        font-size: 1.067vw;
+      }
+    }
+  }
+
+  .contact_map {
+    height: 42vw;
+    .contact_form {
+      height: 42vw;
+      width: 42.4vw;
+      top: -42vw;
+      padding-top: 6.67vw;
+      padding-left: 4.93vw;
+      padding-right: 4vw;
+  
+      .form_title {
+        margin-bottom: 2vw;
+  
+        .title_cn {
+          font-size: 2vw;
+  
+          &::before,
+          &::after {
+            width: 5.33vw;
+          }
+        }
+  
+        .title_en {
+          font-size: 1.33vw;
+        }
+      }
+  
+      .form_main {
+  
+        .main_col {
+          width: calc(50% - .8vw);
+          margin-right: 1.6vw;
+          margin-bottom: .67vw;
+  
+        }
+      }
+  
+      .col_label {
+        font-size: 1vw;
+        margin-bottom: .2vw;
+      }
+  
+      .col_input {
+  
+        input {
+          height: 2.13vw;
+          padding: .33vw;
+        }
+  
+        textarea {
+          height: 7.2vw;
+          padding: .33vw;
+        }
+      }
+  
+      .form_main2 {
+        margin-bottom: 1.67vw;
+      }
+  
+      .submit_btn {
+        width: 11.73vw;
+        height: 3.07vw;
+        font-size: 1vw;
+        line-height: 3vw;
+        border-radius: 1.53vw;
+  
+        &:hover {
+          box-shadow: 0 0 .53vw rgba(0, 0, 0, .2);
+        }
+      }
+    }
+  }
+
+  .news_detail {
+    .news_title {
+      font-size: 3.05vw;
+      margin-bottom: 2.27vw;
+    }
+
+    .news_date {
+      font-size: 1.67vw;
+      margin-bottom: 5.8vw;
+    }
+
+    .news_content {
+      font-size: 1.67vw;
+      padding-bottom: 7.33vw;
+    }
+
+    .pagetion_btn {
+      margin-bottom: 3.33vw;
+
+      .a_btn {
+
+        a {
+          font-size: 1.387vw;
+        }
+      }
+    }
+
+    .back_list {
+      margin-bottom: 4.67vw;
+
+      a {
+        font-size: 1.387vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    .footer_content {
+      flex-wrap: wrap;
+      .content_left{
+        width: 33%;
+        margin-bottom: 2vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .footer {
+    .footer_content {
+      .content_left{
+        width: 100%;
+      }
     }
   }
 }
