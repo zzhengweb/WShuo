@@ -559,7 +559,9 @@ body {
 //应用领域
 .iarea_wrapper {
   margin-bottom: 1rem;
-
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #fafafa;
   .i_title {
     margin-bottom: .5rem;
   }
@@ -783,10 +785,10 @@ body {
   }
 
   .swiper-container {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.125rem;
 
     .swiper-pagination {
-      bottom: 1.25rem;
+      bottom: 1rem;
 
       .my-bullet {
         width: .275rem;

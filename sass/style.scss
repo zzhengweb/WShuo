@@ -394,7 +394,7 @@ body {
 }
 
 .ipro_wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 45px;
 
   .i_title {
     margin-bottom: 48px;
@@ -507,7 +507,10 @@ body {
 
 //应用领域
 .iarea_wrapper {
-  margin-bottom: 150px;
+  margin-bottom: 65px;
+  background-color: #fafafa;
+  padding-top: 60px;
+  padding-bottom: 90px;
 
   .i_title {
     margin-bottom: 50px;
@@ -727,10 +730,10 @@ body {
   }
 
   .swiper-container {
-    padding-bottom: 100px;
+    padding-bottom: 85px;
 
     .swiper-pagination {
-      bottom: 50px;
+      bottom: 40px;
 
       .my-bullet {
         width: 11px;
