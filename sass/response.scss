@@ -1021,6 +1021,46 @@
       }
     }
   }
+
+  .pro_detail {
+    .pro_nav {
+      height: 2.2vw;
+      line-height: 2vw;
+      margin-bottom: 2vw;
+      font-size: 1.2vw;
+      border-left: .267vw solid #019ED5;
+      padding-left: 2vw;
+      padding-right: 1vw;
+      .more{
+        font-size: 1.067vw;
+        margin-bottom: 2vw;
+      }
+    }
+  
+    .pro_img {
+      margin-bottom: 2.67vw;
+    }
+  
+    .pro_content {
+      padding-bottom: 13.33vw;
+  
+      .pro_name {
+        font-size: 2vw;
+        margin-bottom: 1vw;
+        padding-bottom: .33vw;
+        &::after {
+          width: 13.33vw;
+          height: .13vw;
+        }
+       
+      }
+  
+      p {
+        font-size: 1.067vw;
+        line-height: 1.8vw;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1100px) {

@@ -228,6 +228,13 @@
       map = new BMap.Map("map_box");
       poi = new BMap.Point(121.114435, 31.434305);
       map.centerAndZoom(poi, 24);
+      var loadCount = 1;
+      map.addEventListener("tilesloaded", function () {
+        if (loadCount == 1) {
+          map.setCenter(poi);
+        }
+        loadCount = loadCount + 1;
+      });
     }
 
     function setMapEvent() {

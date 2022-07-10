@@ -1952,7 +1952,7 @@ body {
 
           .pop_content {
             .pop_title {
-              font-size: 15px;
+              font-size: .375rem;
               color: #ffffff;
               margin-bottom: 12px;
               font-family: "SourceHanSansCN Normal";
@@ -1961,7 +1961,7 @@ body {
             .pop_addr {
               font-size: 12px;
               color: #ffffff;
-              line-height: 16px;
+              line-height: .4rem;
               font-family: "SourceHanSansCN Normal";
             }
           }
@@ -2141,6 +2141,63 @@ body {
     a {
       font-size: .5rem;
       color: #196fba;
+    }
+  }
+}
+
+.pro_detail {
+  padding-top: 0px;
+  .pro_nav {
+    height: .9rem;
+    line-height: .75rem;
+    border-bottom: .025rem solid #f1f1f1;
+    margin-bottom: .75rem;
+    font-size: .375rem;
+    border-left: .1rem solid #019ED5;
+    padding-left: .75rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-right: .375rem;
+    .more{
+      font-size: .4rem;
+      margin-bottom: 30px;
+      a{
+        color: #019ED5;
+      }
+    }
+  }
+
+  .pro_img {
+    margin-bottom: 40px;
+  }
+
+  .pro_content {
+    padding-bottom: 5rem;
+
+    .pro_name {
+      font-size: 30px;
+      margin-bottom: .375rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-bottom: .125rem;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 5rem;
+        height: .05rem;
+        background-color: #019ed5;
+        left: 0;
+        bottom: 0;
+      }
+     
+    }
+
+    p {
+      font-size: .4rem;
+      color: #666666;
+      line-height: .675rem;
     }
   }
 }
