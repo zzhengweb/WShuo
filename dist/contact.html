@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/response.css">
   <link rel="stylesheet" href="iconfont/iconfont.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
   <!--引用百度地图API-->
   <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DOY76srUcSCyvMGWxbtIYp246TCG5n8D"></script>
@@ -68,28 +69,28 @@
   <div class="contact_wrapper">
     <div class="container_zz">
       <ul class="contact_top">
-        <li>
+        <li data-aos="flip-up">
           <div class="item_icon">
             <img src="./images/contact/icon1.jpg" />
           </div>
           <div class="item_title">联系方式</div>
           <div class="item_info">13024595802</div>
         </li>
-        <li>
+        <li data-aos="flip-up">
           <div class="item_icon">
             <img src="./images/contact/icon2.jpg" />
           </div>
           <div class="item_title">邮箱</div>
           <div class="item_info">ws005@sh-winsure.com </div>
         </li>
-        <li>
+        <li data-aos="flip-up">
           <div class="item_icon">
             <img src="./images/contact/icon3.jpg" />
           </div>
           <div class="item_title">网址</div>
           <div class="item_info">www.sh-winsure.com</div>
         </li>
-        <li>
+        <li data-aos="flip-up">
           <div class="item_icon">
             <img src="./images/contact/icon4.jpg" />
           </div>
@@ -98,7 +99,7 @@
         </li>
       </ul>
     </div>
-    <div class="contact_map">
+    <div class="contact_map" data-aos="zoom-in">
       <div class="map" id="map_box"></div>
       <div class="container_zz">
         <div class="contact_form">
@@ -155,7 +156,7 @@
   <!-- 关于我们 -->
   <div class="icontact_wrapper">
     <div class="container_zz">
-      <div class="icontact_box">
+      <div class="icontact_box" data-aos="zoom-in" aos-duration="1000">
         <div class="title">微烁成立于2017年。经过4年的发展，为各个细分行业有特种照明需求的客户定制解决方案。</div>
         <a href="contact.html" class="icontact_btn">关于我们<img src="./images/icon3.png" /></a>
       </div>
@@ -164,11 +165,11 @@
   <!-- 底部 -->
   <footer class="footer">
     <div class="container_zz">
-      <div class="logo">
+      <div class="logo" data-aos="fade-down">
         <img src="./images/footer/logo.png" />
       </div>
       <div class="footer_content">
-        <div class="content_left">
+        <div class="content_left" data-aos="fade-right">
           <div class="footer_title">联系方式</div>
           <div class="left_info">
             <p>华东：13024595802</p>
@@ -177,7 +178,7 @@
             <p>地址：江苏苏州太仓市城厢镇老浏河路15号</p>
           </div>
         </div>
-        <div class="content_mid">
+        <div class="content_mid" data-aos="fade-up">
           <div class="footer_title">网站地图</div>
           <ul class="mid_nav">
             <li><a href="index.html">首页</a></li>
@@ -194,7 +195,7 @@
             <li><a href="#" class="iconfont">&#xe637;</a></li>
           </ul>
         </div>
-        <div class="content_right">
+        <div class="content_right" data-aos="zoom-in">
           <img src="./images/footer/ewm.jpg" />
         </div>
       </div>
@@ -212,6 +213,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/flexible.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/nav.js"></script>
   <script>
     //创建和初始化地图函数：
